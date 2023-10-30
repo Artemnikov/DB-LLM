@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:8
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'admin'
+    networks:
+      - apps_network
+
+networks:
+  apps_network:
+    external: true
