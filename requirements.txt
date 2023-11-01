@@ -1,2 +1,7 @@
 langchain
-datasets
+langchain-experimental
+langchain_experimental
+openai
+python-dotenv
+pymysql
+langsmith
